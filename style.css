@@ -1,0 +1,123 @@
+body{
+    background-color:hsl(30, 38%, 92%);
+}
+.grid{
+    display:grid ;
+    grid-template-columns: 20% 20%;
+    background-color:white ;
+    width:570px;
+    height: 450px;
+    border-radius: 10px;
+    margin: 150px auto;
+    padding-right:27px;
+}
+.hdra{
+    width: 270px;
+    height:450px;
+    padding-left: 32px;
+    margin-left: 185px;
+}
+article{
+    width:230px;
+}
+.parfum{
+    border-radius: 10px 0px 0px 10px;
+}
+.t{ color:hsl(158, 36%, 37%) ;
+    font-size:25px;
+    font-weight:bold;
+    padding-right:10px;
+}
+.y{ 
+    font-size:13px;
+    text-decoration:line-through;
+    position:relative;
+    bottom: 5px;
+    left: 10px;
+    font-family:'Montserrat', Ariel ;
+}
+p{
+    color:hsl(228, 12%, 48%);
+}
+button{ 
+    width: 237px;
+    padding:12px;
+    color:white;
+    border: 1px hsl(158, 36%, 37%) solid;
+    background-color:hsl(158, 36%, 37%);
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 6px;
+}
+button span{
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Montserrat', Ariel;
+}
+.carossa{
+    padding-right: 7px;
+}
+.o,.m{
+   font-family: 'Montserrat', Ariel;
+   font-size:14px;
+}
+.m{ 
+    font-size: 12px;
+    letter-spacing:5px;
+    padding-top:20px;
+}
+.t,h1{
+    font-family: 'Fraunces',Ariel;
+    font-weight: 700;
+    font-size: 2em;
+}
+h1 + p{
+    line-height:24px;
+}
+h1{
+    line-height:1;
+}
+.e{
+    padding-bottom:1px;
+}
+button:hover{
+    background-color:hsl(212, 21%, 14%);
+}
+@media screen and (max-width: 376px)
+{
+    .grid{
+        width:314px;
+        height:633px;
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top:25px;
+        margin-left: 8px;
+    }
+    .parfum{
+        border-radius:10px 10px 0 0 ;
+        max-height:265px;
+        width:109%;
+        object-fit: cover;
+    }
+    .hdra{
+        margin-left:-10px;
+    }
+    article{
+        width:295px;
+        max-height: 100px;
+    }
+    .e,p{
+        padding: 0;
+    }
+    .m,h1{
+        margin:0;
+    }
+    button{
+        width:290px;
+        margin-top:0px;
+    }
+    .m{
+        margin-bottom:10px;
+    }
+    
+}
